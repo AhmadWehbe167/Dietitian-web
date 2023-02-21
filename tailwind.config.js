@@ -7,7 +7,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#5C96CC",
+        secondary: "#3C4856",
+        lightText: "#777777",
+      },
+      fontFamily: {
+        inter: ["Inter"],
+        opensans: ["Open Sans"],
+      },
+    },
   },
   plugins: [],
 };
