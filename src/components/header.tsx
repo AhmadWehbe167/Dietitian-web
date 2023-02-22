@@ -40,7 +40,7 @@ export default function Header() {
       <ul
         className={
           (!isMenuOpen ? "invisible " : "") +
-          "absolute flex flex-col gap-5 font-inter top-14 w-full bg-white md:w-auto md:visible md:flex-row md:relative md:top-0 lg:gap-10 lg:text-lg"
+          "py-3 z-50 absolute flex flex-col gap-5 font-inter top-14 w-full bg-white md:w-auto md:visible md:flex-row md:relative md:top-0 lg:gap-10 lg:text-lg"
         }
       >
         <li
