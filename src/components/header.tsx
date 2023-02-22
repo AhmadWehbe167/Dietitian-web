@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Image from "next/image";
+import SButton from "./button";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   function toggleOpen() {
     setIsMenuOpen(!isMenuOpen);
@@ -37,7 +40,7 @@ export default function Header() {
       <ul
         className={
           (!isMenuOpen ? "invisible " : "") +
-          "absolute flex flex-col gap-5 font-inter top-14 md:visible md:flex-row md:relative md:top-0 lg:gap-10 lg:text-lg"
+          "absolute flex flex-col gap-5 font-inter top-14 w-full bg-white md:w-auto md:visible md:flex-row md:relative md:top-0 lg:gap-10 lg:text-lg"
         }
       >
         <li
@@ -78,16 +81,14 @@ export default function Header() {
         </li>
       </ul>
 
-      <div className="btn hidden md:flex">
-        <p className="text-white font-inter text-sm font-bold">Contact</p>
-        <Image
-          src="/icons/whatsapp.png"
-          alt="whatsapp-icon"
-          width={20}
-          height={20}
-          className="object-contain"
-        />
-      </div>
+      <SButton
+        text="Contact"
+        classes="hidden md:flex"
+        icon="/icons/whatsapp.png"
+        handleClick={() => {
+          router.push("https://wa.me/96170693927");
+        }}
+      />
     </div>
   );
 }
