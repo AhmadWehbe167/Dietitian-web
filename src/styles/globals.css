@@ -30,4 +30,12 @@
   .navLink:nth-child(4) {
     transition-delay: 300ms;
   }
+
+  .title {
+    @apply font-inter text-4xl font-bold text-center text-secondary md:text-start lg:text-5xl;
+  }
+
+  .paragraph {
+    @apply text-secondary text-center font-sans text-sm md:text-sm md:text-start lg:text-lg;
+  }
 }

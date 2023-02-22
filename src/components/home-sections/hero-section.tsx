@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SButton from "./button";
+import SButton from "../button";
 import { useRouter } from "next/router";
 
 export default function HeroSection() {
@@ -42,13 +42,13 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <h1 className="font-inter text-4xl font-bold text-center text-secondary md:text-start lg:text-5xl">
+            <h1 className="title">
               Healther <span className="text-primary">Choices</span> For A
               Healthier <span className="text-primary">You</span>
             </h1>
           </div>
 
-          <p className="text-secondary text-center font-sans text-sm md:text-sm md:text-start lg:text-lg">
+          <p className="paragraph">
             With extensive knowledge and expertise in the Nutrition and
             Pharmaceutical fields, I can provide evidence-based advices and
             personalized dietary recommendations (taking into consideration your
