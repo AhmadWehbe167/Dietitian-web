@@ -3,7 +3,21 @@ import PromiseCard from "../promise-card";
 
 export default function PromiseSection() {
   return (
-    <div className="text-secondary flex flex-col gap-10 items-center mt-10 xl:gap-14 xl:mb-10">
+    <div className="text-secondary relative flex flex-col gap-10 items-center mt-10 xl:gap-14 xl:mb-10">
+      <Image
+        className="absolute top-0 left-0 h-96 object-contain -translate-x-24 invisible md:visible"
+        src="/images/promise-section/left-vector.png"
+        alt="promise-bg"
+        width={100}
+        height={100}
+      />
+      <Image
+        className="absolute top-0 right-0 h-96 object-contain translate-x-24 invisible md:visible"
+        src="/images/promise-section/right-vector.png"
+        alt="promise-bg"
+        width={100}
+        height={100}
+      />
       <h1 className="title">
         My <span className="text-primary">Promise</span> To You
       </h1>
