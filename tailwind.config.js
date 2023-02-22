@@ -13,7 +13,7 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1280px",
+      xl: "1200px",
     },
     extend: {
       colors: {
@@ -52,10 +52,28 @@ module.exports = {
           "90%": { transform: "translate(-20px, -20px)" },
           "100%": { transform: "translate(-25px, -25px)" },
         },
+        "slide-from-left": {
+          "0%": { transform: "translateX(-200%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-from-right": {
+          "0%": { transform: "translateX(200%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-in-top": {
+          "0%": { transform: "translateY(-200%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "right-floating": "floatRight 6s linear infinite",
         "left-floating": "floatLeft 6s linear infinite",
+        "slide-in-left":
+          "slide-from-left 1s 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+        "slide-in-right":
+          "slide-from-right 1s 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+        "slide-in-top":
+          "slide-in-top 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
       },
     },
   },

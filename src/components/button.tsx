@@ -14,7 +14,10 @@ export default function SButton({
 }) {
   return (
     <>
-      <button className={"btn md:flex " + classes} onClick={handleClick}>
+      <button
+        className={"shadow-md btn md:flex " + classes}
+        onClick={handleClick}
+      >
         <p
           unselectable="on"
           className="text-white font-inter text-sm font-bold tracking-wider"

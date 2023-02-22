@@ -16,8 +16,9 @@ export default function Header() {
   }
 
   return (
-    <div className="flex justify-start items-center relative text-secondary md:justify-between">
-      <Image
+    <div className="flex justify-start items-center relative text-secondary md:justify-between animate-slide-in-top">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         className="absolute h-auto md:hidden"
         src="/icons/menu.png"
         alt="menu-icon"
@@ -27,13 +28,8 @@ export default function Header() {
       />
 
       <div className="flex justify-center items-center gap-2 m-auto md:m-0">
-        <Image
-          src="/logo.jpeg"
-          alt="logo"
-          width={40}
-          height={40}
-          className="h-auto w-auto"
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.jpeg" alt="logo" className="h-auto w-12" />
         <p className="font-inter font-black text-xl">Dietitian</p>
       </div>
 
