@@ -22,9 +22,7 @@ export default function PromiseCard({
         width={100}
         height={100}
       />
-      <p className="text-secondary font-inter font-extrabold text-xl w-1/2 md:text-sm md:w-full md:text-center">
-        {text}
-      </p>
+      <p className="mark-text">{text}</p>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Header() {
   }
 
   return (
-    <div className="flex justify-start items-center relative text-secondary md:justify-between animate-slide-in-top">
+    <div className="flex justify-start items-center relative text-secondary z-50 md:justify-between animate-slide-in-top">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="absolute h-auto md:hidden"

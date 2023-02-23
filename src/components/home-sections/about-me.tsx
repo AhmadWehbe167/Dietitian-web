@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function AboutMe() {
   const router = useRouter();
   return (
-    <div className="flex flex-col my-10 gap-10 items-center">
+    <div className="flex flex-col gap-10 items-center">
       <h1 className="title text-center">About Me</h1>
       <div className="flex flex-col gap-5 items-center md:flex-row md:gap-16">
         <Image
