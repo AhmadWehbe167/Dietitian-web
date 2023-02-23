@@ -3,7 +3,7 @@ import PromiseCard from "../promise-card";
 
 export default function PromiseSection() {
   return (
-    <div className="text-secondary relative flex flex-col gap-10 items-center xl:gap-14">
+    <div className="text-secondary relative flex flex-col gap-10 items-center xl:gap-14 lg:my-14">
       <Image
         className="absolute top-0 left-0 h-96 object-contain -translate-x-24 invisible md:visible"
         src="/images/promise-section/left-vector.png"

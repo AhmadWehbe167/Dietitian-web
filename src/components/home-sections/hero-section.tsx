@@ -7,7 +7,7 @@ export default function HeroSection() {
   const router = useRouter();
   return (
     <>
-      <div className="w-full justify-between flex flex-col gap-6 items-center md:flex-row-reverse md:gap-0 lg:gap-22">
+      <div className="w-full justify-between flex flex-col gap-6 items-center md:flex-row-reverse md:gap-0 lg:gap-22 lg:mt-10">
         <div className="w-10/12 relative max-w-sm m-auto mt-3 md:w-full animate-slide-in-right">
           <Image src="/images/dr.png" alt="doctor" width={400} height={400} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
