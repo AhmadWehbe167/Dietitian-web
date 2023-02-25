@@ -3,6 +3,7 @@ import HeroSection from "@/components/home-sections/hero-section";
 import PromiseSection from "@/components/home-sections/promise-section";
 import AboutMe from "@/components/home-sections/about-me";
 import Stats from "@/components/home-sections/stats";
+import BookSection from "@/components/home-sections/book-session";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutMe />
       </div>
       <Stats />
+      <BookSection />
     </>
   );
 }

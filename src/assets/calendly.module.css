@@ -1,0 +1,21 @@
+.customHeights {
+  height: 850px;
+}
+
+@media screen and (min-width: 650px) {
+  .customHeights {
+    height: 950px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .customHeights {
+    height: 920px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .customHeights {
+    height: 800px;
+  }
+}

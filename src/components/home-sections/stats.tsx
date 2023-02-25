@@ -5,7 +5,7 @@ import NbCard from "../nbCard";
 export default function Stats() {
   const size = useWindowSize();
   return (
-    <div className="my-16 flex flex-col items-center relative bg-primary">
+    <div className="mt-16 flex flex-col items-center relative bg-primary">
       {size.width < 768 ? (
         <Image
           className="w-full"
