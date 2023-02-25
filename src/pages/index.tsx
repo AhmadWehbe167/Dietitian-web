@@ -2,8 +2,9 @@ import Header from "@/components/header";
 import HeroSection from "@/components/home-sections/hero-section";
 import PromiseSection from "@/components/home-sections/promise-section";
 import AboutMe from "@/components/home-sections/about-me";
-import Stats from "@/components/home-sections/stats";
-import BookSection from "@/components/home-sections/book-session";
+import Stats from "@/components/home-sections/stats-section";
+import BookSection from "@/components/home-sections/book-section";
+import PricingSection from "@/components/home-sections/pricing-section";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <Stats />
       <BookSection />
+      <PricingSection />
     </>
   );
 }

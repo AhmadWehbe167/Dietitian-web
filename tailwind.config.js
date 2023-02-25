@@ -21,6 +21,9 @@ module.exports = {
         primary: "#4A78A3",
         secondary: "#3C4856",
         lightText: "#777777",
+        free: "#67D2D0",
+        basic: "#86E5FB",
+        premium: "#F8988F",
       },
       fontFamily: {
         inter: ["Inter"],
