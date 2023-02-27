@@ -24,6 +24,8 @@ module.exports = {
         free: "#67D2D0",
         basic: "#86E5FB",
         premium: "#F8988F",
+        cardUpper: "#85A5C2",
+        cardLower: "#D1DCE8",
       },
       fontFamily: {
         inter: ["Inter"],

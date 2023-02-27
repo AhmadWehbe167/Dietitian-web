@@ -5,6 +5,7 @@ import AboutMe from "@/components/home-sections/about-me";
 import Stats from "@/components/home-sections/stats-section";
 import BookSection from "@/components/home-sections/book-section";
 import PricingSection from "@/components/home-sections/pricing-section";
+import ClientSection from "@/components/home-sections/clients-section";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Stats />
       <BookSection />
       <PricingSection />
+      <ClientSection />
     </>
   );
 }
