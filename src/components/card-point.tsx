@@ -10,7 +10,7 @@ export default function CardPoint({ text }: { text: string }) {
         width={20}
         height={20}
       />
-      <p className="text-secondary font-inter text-sm">{text}</p>
+      <p className="text-secondary font-inter text-base md:text-xs">{text}</p>
     </div>
   );
 }

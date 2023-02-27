@@ -5,7 +5,7 @@ export default function PricingSection() {
     console.log("Buy");
   }
   return (
-    <div className="flex flex-col py-5 md:px-10 lg:px-16 xl:px-20 gap-14 bg-primary">
+    <div className="flex flex-col pt-5 pb-14 md:px-10 lg:px-16 xl:px-20 gap-14 bg-primary">
       <h1 className="title text-white text-center">Choose your plan</h1>
       <div className="flex flex-col md:flex-row justify-center gap-16 md:gap-5 lg:gap-10 xl:gap-16 align-middle px-6 md:px-0">
         <PricingCard
@@ -35,6 +35,7 @@ export default function PricingSection() {
           color="basic"
           followUpPrice={40}
           onClick={handleBuy}
+          classes="lg:scale-110"
         />
         <PricingCard
           planName="Premium"
