@@ -1,10 +1,29 @@
-import Image from "next/image";
+import { useState } from "react";
 import CurveHeader from "../curve-header";
 import useWindowSize from "@/hooks/useWindowSize";
 import ClientCard from "../client-card";
+import reviews from "../../assets/data/reviews.json";
 
 export default function ClientSection() {
+  const [index, setIndex] = useState(1);
   const size = useWindowSize();
+  const images = [
+    "/images/clients-section/left.png",
+    "/images/clients-section/middle.png",
+    "/images/clients-section/right.png",
+  ];
+
+  function handleNext() {
+    if (index < 2) {
+      setIndex(index + 1);
+    }
+  }
+
+  function handlePrev() {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  }
   return (
     <div className="flex flex-col items-center relative bg-white">
       <CurveHeader
@@ -15,29 +34,38 @@ export default function ClientSection() {
         titleColor="white"
       />
       <div className="relative w-full px-10 md:px-0 md:w-5/6 my-12 flex justify-center">
-        {size.width > 768 ? (
+        {size.width > 768 && index > 0 ? (
           <ClientCard
-            image="/images/clients-section/middle.png"
-            text="I feel much better and healthier after only few weeks of starting."
-            name="Celine Addy"
-            age={22}
-            classes="absolute left-0 scale-75 blur-sm"
+            image={images[(index - 1) % images.length]}
+            text={reviews[(index - 1) % images.length].review}
+            name={reviews[(index - 1) % images.length].name}
+            location={reviews[(index - 1) % images.length].location}
+            index={index - 1}
+            handlePrev={handlePrev}
+            handleNext={handleNext}
+            classes={"absolute left-0 scale-75 blur-sm"}
           />
         ) : null}
-        {size.width > 768 ? (
+        {size.width > 768 && index < 2 ? (
           <ClientCard
-            image="/images/clients-section/right.png"
-            text="I like the personalized meals. They helped fall in love with the process."
-            name="Celine Addy"
-            age={22}
+            image={images[(index + 1) % images.length]}
+            text={reviews[(index + 1) % images.length].review}
+            name={reviews[(index + 1) % images.length].name}
+            location={reviews[(index + 1) % images.length].location}
+            index={index + 1}
+            handlePrev={handlePrev}
+            handleNext={handleNext}
             classes="absolute right-0 scale-75 blur-sm"
           />
         ) : null}
         <ClientCard
-          image="/images/clients-section/middle.png"
-          text="Over the past few months, I have seen a huge improvement in my overall health."
-          name="John Doe"
-          age={25}
+          image={images[index]}
+          text={reviews[index].review}
+          name={reviews[index].name}
+          location={reviews[index].location}
+          handlePrev={handlePrev}
+          handleNext={handleNext}
+          index={index}
         />
       </div>
     </div>

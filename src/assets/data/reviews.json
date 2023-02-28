@@ -1,0 +1,17 @@
+[
+  {
+    "name": "John Doe",
+    "location": "South Lebanon",
+    "review": "Over the past few months, I have seen a huge improvement in my overall health."
+  },
+  {
+    "name": "Celine Addy",
+    "location": "Beirut, Lebanon",
+    "review": "I like the personalized meals. They helped fall in love with the process."
+  },
+  {
+    "name": "Marry Joe",
+    "location": "North Lebanon",
+    "review": "I couldn't believe how satisfying the results are in just few weeks."
+  }
+]
