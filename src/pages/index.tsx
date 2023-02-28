@@ -6,6 +6,7 @@ import Stats from "@/components/home-sections/stats-section";
 import BookSection from "@/components/home-sections/book-section";
 import PricingSection from "@/components/home-sections/pricing-section";
 import ClientSection from "@/components/home-sections/clients-section";
+import FAQSection from "@/components/home-sections/faq";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <BookSection />
       <PricingSection />
       <ClientSection />
+      <FAQSection />
     </>
   );
 }
