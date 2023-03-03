@@ -18,7 +18,7 @@ export default function FAQSection() {
         width={100}
         height={100}
       />
-      <h1 className="top-0 title px-8 md:px-20 z-20 text-secondary">
+      <h1 className="title px-8 md:px-20 z-20 text-secondary">
         Frequently Asked Questions
       </h1>
       <div className="w-full p-8 py-16 md:px-20 lg:px-40 grid grid-cols-1 md:grid-cols-2 gap-7">
